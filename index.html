@@ -7,20 +7,28 @@
 <title>Loading...</title>
 
 <style>
-html, body{
-    margin:0;
-    width:100%;
-    height:100%;
-    background:black;
-    overflow:hidden;
-}
+        /* Reset margins and create a full-screen, centered dark container */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: #000; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
 
-video{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-</style>
+        /* Center and scale the video for perfect mobile sizing */
+        video { 
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain; /* Keeps original video aspect ratio without cropping */
+        }
+    </style>
 </head>
 
 <body>
